@@ -7,7 +7,7 @@
       <img *ngIf="maxMinDes!.temp < 18" src="assets/cold.png" alt="img" />
       <div class="cityName-temp">
         <span>{{ maxMinDes?.cityName }}</span>
-        <span>{{maxMinDes?.temp }}C</span>
+        <span>{{ maxMinDes?.temp }}°C</span>
       </div>
     </div>
     <p>More Information</p>
@@ -15,15 +15,15 @@
       <div class="gridcontainer">
         <div>
           <img src="assets/temperature.png" alt="img" />
-          <span>{{maxMinDes?.max }}C</span>
+          <span>{{ maxMinDes?.min }}°C</span>
         </div>
         <div>
           <img src="assets/hot.png" alt="img" />
-          <span>{{maxMinDes?.min }}C</span>
+          <span>{{ maxMinDes?.max }}°C</span>
         </div>
         <div>
           <img src="assets/humidity.png" alt="img" />
-          <span>{{ maxMinDes?.humidity }}</span>
+          <span>{{ maxMinDes?.humidity }}%</span>
         </div>
         <div>
           <img src="assets/wind.png" alt="img" />

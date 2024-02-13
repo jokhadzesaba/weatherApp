@@ -17,7 +17,15 @@ interface TempByDay {
 export class AppComponent implements OnInit {
   title = 'weatherapp';
   public city: string = '';
-  public maxMinDes?: TempByDay = {cityName:"none",temp:0,max:0,min:0,description:"none",windSpeed:0,humidity:0};
+  public maxMinDes?: TempByDay = {
+    cityName: 'none',
+    temp: 0,
+    max: 0,
+    min: 0,
+    description: 'none',
+    windSpeed: 0,
+    humidity: 0,
+  };
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
